@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display:flex;
+  height: 100vh;
+  overflow: hidden
+}
+
+.sidebar input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+.sidebar {
+  width: 260px;
+  background-color: #12372A;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.imagem_logo {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 15px auto;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+}
+
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  background-color: #1f4e3d;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+  background-color: #2d6d58;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #f5f7fa;
+  color: #12372A;
+}

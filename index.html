@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Grupo Simoldes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <img src="img.png" alt="Logo Grupo Simoldes">
+    
+    <form id="login-form">
+      <input type="text" placeholder="Usuário" required />
+      <input type="password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('login-form');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Impede envio real do form
+      window.location.href = "projetos.html"; // Redireciona para a página fictícia
+    });
+  </script>
+</body>
+</html>
