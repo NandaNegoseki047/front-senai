@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projetos - Simoldes</title>
+  <link rel="stylesheet" href="projetos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <button id="toggleSidebar" class="toggle-btn">☰</button>
+    <img class="imagem_logo" id="logo" src="imagem_logo.png" alt="Logo Grupo Simoldes" />
+    <h2>Projetos</h2>
+    <input type="text" id="searchInput" placeholder="Buscar projeto..." />
+    <ul>
+      <li>Projeto 1</li>
+      <li>Projeto 2</li>
+      <li>Projeto 3</li>
+      <li>Projeto 4</li>
+      <li>Projeto 5</li>
+      <li>Projeto 6</li>
+      <li>Projeto 7</li>
+      <li>Projeto 8</li>
+      <li>Projeto 9</li>
+      <li>Projeto 10</li>
+      <li>Projeto 11</li>
+      <li>Projeto 12</li>
+      <li>Projeto 13</li>
+      <li>Projeto 14</li>
+      <li>Projeto 15</li>
+      <li>Projeto 16</li>
+      <li>Projeto 17</li>
+      <li>Projeto 18</li>
+      <li>Projeto 19</li>
+      <li>Projeto 20</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <!-- Saudação inicial -->
+    <h1 id="saudacao">Carregando saudação...</h1>
+
+    <!-- Nome do projeto selecionado -->
+    <h2 id="projectName" style="display: none;"></h2>
+
+    <!-- Dashboards -->
+    <div class="dashboard">
+      <div class="dashboard-box">
+        <h3>Tempo de Execução dos Projetos</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+      <div class="dashboard-box">
+        <h3>Status dos Projetos</h3>
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>  
+
+    <!-- Detalhes do Projeto -->
+    <div id="projectDetails" class="project-details" style="display: none;">
+      <h3>Detalhes do Projeto</h3>
+      <div class="project-images">
+        <button id="prevBtn" class="carousel-btn">‹</button>
+        <img id="carouselImage" src="projeto_img1.png" alt="Imagem do Projeto">
+        <button id="nextBtn" class="carousel-btn">›</button>
+      </div>
+      
+
+      <p id="projectDescription">Selecione um projeto para ver os detalhes.</p>
+
+      <div class="project-steps">
+        <h4>Etapas do Projeto</h4>
+        <!-- Etapas geradas dinamicamente aqui -->
+        <ul id="projectSteps" class="project-steps-list">
+          <!-- As etapas serão inseridas aqui pelo JavaScript -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
